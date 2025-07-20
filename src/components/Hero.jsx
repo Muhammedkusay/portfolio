@@ -8,7 +8,7 @@ function Hero() {
             <div className="bg-gradient-to-b from-white to-indigo-50 overflow-hidden">
                 <div className="md:w-4/6 mx-auto px-4 md:px-0 flex flex-wrap items-center justify-between">
                     <div className="w-full md:w-7/12">
-                        <h1 className="pt-4 text-slate-700 font-bold text-3xl md:text-5xl text-wrap">Hi, I'm Muhamad 👋</h1>
+                        <h1 className="pt-4 text-slate-700 font-bold text-3xl md:text-5xl text-wrap">Hi, I'm Muhammed 👋</h1>
                         <p className="pt-4 text-slate-500 md:w-72">A Software Engineering Student & Web Developer,
                         focused on Full-Stack Web Development and building modern, useful tools.</p>
                         <div className="flex gap-2 pt-6">
