@@ -1,24 +1,24 @@
-import ContactBtn from "./ContactBtn";
+import CvBtn from "./CvBtn";
+import SecondaryBtn from "./SecondaryBtn";
 
 function Hero() {
 
     return(
-        <div>
-            <div className="b overflow-hidden rounded-br-[200px] md:rounded-br-full border-b-6 border-b-indigo-500">
+        <div className="pt-6">
+            <div className="bg-gradient-to-b from-white to-indigo-50 overflow-hidden">
                 <div className="md:w-4/6 mx-auto px-4 md:px-0 flex flex-wrap items-center justify-between">
-                    <div>
-                        <h1 className="pt-4 text-gray-700 font-bold text-2xl md:text-5xl text-wrap">Hi, I'm Muhamad 👋</h1>
-                        <p className="pt-4 text-gray-500 md:w-72">A passionate Software Engineer focused on Web Development and building modern, useful tools.</p>
+                    <div className="w-full md:w-7/12">
+                        <h1 className="pt-4 text-slate-700 font-bold text-3xl md:text-5xl text-wrap">Hi, I'm Muhamad 👋</h1>
+                        <p className="pt-4 text-slate-500 md:w-72">A Software Engineering Student & Web Developer,
+                        focused on Full-Stack Web Development and building modern, useful tools.</p>
                         <div className="flex gap-2 pt-6">
-                            <a className="block w-fit px-4 py-2.5 rounded-full text-white bg-indigo-600 hover:bg-indigo-700 shadow-sm cursor-pointer">
-                                Download CV
-                            </a>
-                            <ContactBtn />
+                            <CvBtn />
+                            {/* <SecondaryBtn text={"Contact"} href={"/"} /> */}
                         </div>
                     </div>
                     <div className="w-full md:w-5/12 pt-6 md:pt-0">
-                        <img src="/src/assets/profile_picture_min.png" alt="" 
-                            className="grayscale drop-shadow-2xl opacity-95"/>
+                        <img src="/src/assets/profile_picture.png" alt="" 
+                            className="grayscale drop-shadow-slate-300 drop-shadow-2xl opacity-95"/>
                     </div>
                 </div>
             </div>

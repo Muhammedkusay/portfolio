@@ -1,13 +1,11 @@
 
-function LargeLogo({size}) {
-
-    const logoSize = " text-" + size;
+function LargeLogo() {
 
     return(
-        <div className="select-none flex items-end gap-0.5">
-            <p className={"w-fit px-2 py-1 font-bold rounded-md text-white bg-indigo-600 " + logoSize}>M</p>
-            <p className={"hidden md:block text-gray-700" + logoSize}>uhammed</p>
-        </div>
+        <a href="./" className="w-fit select-none flex items-end gap-0.5 text-3xl">
+            <p className={"px-2 py-1 font-bold rounded-md text-white bg-indigo-600"}>M</p>
+            <p className={"hidden md:block text-slate-700"}>uhammed</p>
+        </a>
     )
 }
 
