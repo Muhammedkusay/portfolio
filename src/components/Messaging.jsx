@@ -2,6 +2,7 @@ import { useState } from "react"
 import Logo from "./Logo"
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoMdSend } from "react-icons/io";
+import { FaStar } from "react-icons/fa";
 
 
 function Messaging() {
@@ -34,14 +35,15 @@ function Messaging() {
                 </div>
             </div>
             {/* show messages */}
-            <div className="flex gap-2 items-end px-4 mt-auto md:px-6 max-h-72 overflow-hidden">
+            <div className="flex gap-2 items-end px-4 mt-auto md:px-6 max-h-72 md:max-h-[240px] overflow-hidden">
                 <Logo />
                 <div>                    
-                    <p className="text-slate-700 bg-slate-100 p-3 rounded-xl border border-slate-200">
+                    <p className="relative text-slate-700 bg-slate-100 p-3 rounded-xl border border-slate-200">
                         I’m Muhammed, a <span className="font-semibold">full-stack web developer</span> with a strong foundation in modern 
                         web technologies and a passion for building user-friendly web applications.
                         <span className="hidden md:inline"> Whether it’s crafting clean UIs or solving backend challenges, </span>
                         I’m always looking to grow and build better digital experiences.
+                        <FaStar className="absolute right-2 bottom-2 text-slate-500"/>
                     </p>
                     <p className="text-slate-700 bg-slate-100 mt-1 p-2.5 py-2 rounded-xl border border-slate-200">
                         Type a message <span className="text-xl">👋</span>
