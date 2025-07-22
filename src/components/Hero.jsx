@@ -13,7 +13,7 @@ function Hero() {
                         focused on Full-Stack Web Development and building modern, useful tools.</p>
                         <div className="flex gap-2 pt-6">
                             <CvBtn />
-                            {/* <SecondaryBtn text={"Contact"} href={"/"} /> */}
+                            <img src="./src/assets/world_icon.gif" alt="" className="w-12 rotate-12 select-none"/>
                         </div>
                     </div>
                     <div className="w-full md:w-5/12 pt-6 md:pt-0">
