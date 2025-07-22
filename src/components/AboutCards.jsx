@@ -10,72 +10,75 @@ import { FaGitAlt } from "react-icons/fa";
 import { SiAlpinedotjs } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
+import ProgrammingBadget from "./ProgrammingBadget";
+import MacUI from "./MacUI";
 
 
 function AboutCards() {
 
     return(
-        <div className="flex flex-col md:flex-row gap-8 xl:gap-16 justify-between mt-18 md:mt-28">
+        <div className="flex flex-col md:flex-row gap-8 xl:gap-16 justify-between mt-24 md:mt-32 lg:mt-40">
 
-            <div className="w-full md:w-[70%] lg:col-span-2 bg-white">
+            <div className="pt-16 w-full lg:w-[70%] lg:col-span-2 flex flex-col md:gap-6 lg:gap-12 bg-white">
+                {/* mouse gif & title */}
+                <div className="flex flex-col lg:flex-row gap-4 items-center">
+                    <img src="./src/assets/mouse.gif" alt="" className="w-28"/>
+                    <p className="text-3xl lg:text-4xl font-semibold text-slate-700">Languages & Frameworks</p>
+                </div>
+               
+               {/* paragraph */}
+                <p className="my-6 lg:mt-8 text-slate-600 text-lg">
+                    I enjoy building user-friendly, modern, and efficient web applications from scratch or improving existing ones.
+                    I love learning by doing <span className="hidden md:inline">— I often recreate real-world websites for practice and enjoy optimizing the code behind them.</span>
+                </p>
 
+                {/* languages logo */}
                 <div className="flex flex-wrap gap-1">
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-red-500">
-                        <FaLaravel className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">Laravel</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-sky-400">
-                        <GrMysql className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">MySql</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-blue-400">
-                        <SiPostgresql className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">PostgreSql</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-orange-600">
-                        <FaGitAlt className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">Git</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-orange-500">
-                        <FaHtml5 className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">Html</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-blue-600">
-                        <FaCss3Alt className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">Css</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-yellow-400">
-                        <IoLogoJavascript className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">Javascript</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-cyan-500">
-                        <RiTailwindCssFill className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">Tailwind</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-sky-500">
-                        <FaReact className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">React js</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-emerald-500">
-                        <SiAlpinedotjs className="text-2xl text-white"/>
-                        <p className="hidden md:block text-white text-sm">Alpine js</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-amber-600">
-                        <FaJava className="text-2xl text-white" />
-                        <p className="hidden md:block text-white text-sm">Java</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-slate-100 border border-slate-200">
-                        <img src="./src/assets/python-icon.png" alt="" className="w-6"/>
-                        <p className="hidden md:block text-slate-700 text-sm">Python</p>
-                    </div>
-                    <div className="size-11 md:w-fit md:h-10 md:px-2.5 flex items-center justify-center md:gap-2 rounded-full bg-slate-100 border border-slate-200">
-                        <img src="./src/assets/c-icon.png" alt="" className="w-6"/>
-                        <p className="hidden md:block text-slate-700 text-sm">C</p>
-                    </div>
+
+                    <ProgrammingBadget text="Laravel">
+                        <FaLaravel />
+                    </ProgrammingBadget>   
+                    <ProgrammingBadget text="MySql">
+                        <GrMysql />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="PostgreSql">
+                        <SiPostgresql />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Git">
+                        <FaGitAlt className="text-2xl text-slate-700" />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Html">
+                        <FaHtml5 />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Css">
+                        <FaCss3Alt />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Javascript">
+                        <IoLogoJavascript />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Tailwind">
+                        <RiTailwindCssFill />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="React js">
+                        <FaReact />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Alpine js">
+                        <SiAlpinedotjs />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Java">
+                        <FaJava />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="Python">
+                        <img src="./src/assets/python-icon.png" alt="Python" className="w-6 grayscale" />
+                    </ProgrammingBadget>
+                    <ProgrammingBadget text="C">
+                        <img src="./src/assets/c-icon.png" alt="C" className="w-6 grayscale" />
+                    </ProgrammingBadget>
                 </div>
             </div>
 
-            <div className="w-full md:w-[30%] overflow-hidden">
+            {/* phone */}
+            <div className="w-full lg:w-[30%] overflow-hidden">
                 <video src="./src/assets/phone.webm" autoPlay loop muted />
             </div>
 

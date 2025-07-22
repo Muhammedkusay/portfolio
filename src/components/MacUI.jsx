@@ -1,6 +1,5 @@
 import { FiPlus } from "react-icons/fi";
 
-
 function MacUI() {
 
     return(
@@ -22,19 +21,14 @@ function MacUI() {
                 </div>
             </div>
             {/* title & img*/}
-            <div className="flex items-center justify-between text-xl md:text-2xl mb-3 px-6 text-slate-600 font-semibold">
-                <p>What I Know?</p>
-                <div className="w-9 md:w-9 rounded-full overflow-hidden border-2 border-slate-400">
-                    <img src="./src/assets/profile_2.jpg" alt="" />
-                </div>
-            </div>
+            <p className=" text-xl md:text-2xl mt-3 px-6 text-slate-600 font-semibold">What I Know?</p>
             {/* text */}
-            <p className="z-20 text-slate-700 px-6">On the frontend, I work with <b>HTML</b>, <b>CSS (Tailwind)</b>, <b>JavaScript</b>, and have experience using  <b>React</b> and <b>Alpine.js</b>.
-                On the backend, I use <b>PHP</b> with the <b>Laravel</b> framework, and I manage data using <b>MySQL</b> or <b>PostgreSQL</b>.
-                I'm also familiar with tools like <b>Git</b>, and deployment using <b>Railway</b> or <b>Netlify</b>.
+            <p className="z-20 text-slate-700 px-6">On the frontend, I work with HTML, CSS (Tailwind), JavaScript, and have experience using React and Alpine.js.
+                On the backend, I use PHP with the Laravel framework, and I manage data using MySQL or PostgreSQL.
+                I'm also familiar with tools like Git, and deployment using Railway or Netlify.
             </p>
             <p className="hidden md:block z-20 text-slate-700 px-6">I’ve also worked with 
-                <b> Python</b>, <b>Java</b>, and <b>C</b> through academic projects, algorithmic challenges, 
+                 Python, Java, and C through academic projects, algorithmic challenges, 
                 and problem-solving tasks.
             </p>
     
