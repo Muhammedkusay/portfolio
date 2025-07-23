@@ -23,7 +23,7 @@ function NavBar() {
                         <span className="max-w-0 group-hover:max-w-[100px] transition-all duration-400 ease-in-out overflow-hidden motion-reduce:transition-none">About</span>
                     </a>
                     {/* Projects */}
-                    <a href="/" className="group flex items-center  gap-1 text-slate-700 p-2 hover:bg-slate-100 rounded-full">
+                    <a href="/#projects" className="group flex items-center  gap-1 text-slate-700 p-2 hover:bg-slate-100 rounded-full">
                         <GoPaperclip className="text-2xl"/>
                         <span className="max-w-0 group-hover:max-w-[100px] transition-all duration-400 ease-in-out overflow-hidden motion-reduce:transition-none">Projects</span>
                     </a>

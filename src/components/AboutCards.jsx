@@ -21,7 +21,7 @@ function AboutCards() {
 
             <div className="pt-16 w-full lg:w-[70%] lg:col-span-2 flex flex-col md:gap-6 lg:gap-12 bg-white">
                 {/* mouse gif & title */}
-                <div className="flex flex-col lg:flex-row gap-4 items-center">
+                <div className="flex gap-4 items-center">
                     <img src="./src/assets/mouse.gif" alt="" className="w-28"/>
                     <p className="text-3xl lg:text-4xl font-semibold text-slate-700">Languages & Frameworks</p>
                 </div>
