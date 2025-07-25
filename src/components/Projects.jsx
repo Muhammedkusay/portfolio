@@ -78,8 +78,12 @@ function Projects() {
                             <img src="./src/assets/project_1/A.png" alt="" />
                         </div>
                         <div className="h-full p-4 flex flex-col gap-3 lg:gap-6">
-                            {/* title */}
-                            <h1 className="text-3xl text-slate-700">Real Estate Web Application</h1>
+                            <div>
+                                {/* title */}
+                                <h1 className="text-3xl text-slate-700">Real Estate Web Application</h1>
+                                {/* date */}
+                                <p className="text-slate-500">Jul 2024</p>
+                            </div>
                             {/* text */}
                             <p className="text-slate-500">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus sit veniam perspiciatis, 
