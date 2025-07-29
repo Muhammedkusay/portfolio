@@ -1,6 +1,7 @@
 import Title from "./Title"
 import PrimaryBtn from "./PrimaryBtn"
 import SecondaryBtn from "./SecondaryBtn"
+import ProjectCard from "./ProjectCard"
 import ProgrammingBadget from "./ProgrammingBadget"
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaLaravel } from "react-icons/fa"
 import { BsBoxArrowUpRight } from "react-icons/bs";
@@ -11,6 +12,14 @@ import { SiGooglemaps } from "react-icons/si"
 
 
 function Projects() {
+
+    let project_1 = [
+        "./src/assets/project_1/A.png",
+        "./src/assets/project_1/B.png",
+        "./src/assets/project_1/C.png",
+        "./src/assets/project_1/D.png",
+        "./src/assets/project_1/E.png",
+    ]
 
     return(
         <section id="projects" className="px-4 md:px-0 pt-16 md:pt-18 md:mt-32 min-h-[1200px]">
@@ -73,12 +82,10 @@ function Projects() {
                     </div>
                     
                     {/* card, make img slider , create slider component*/}
-                    <div className="w-full lg:w-1/2 flex flex-col border border-slate-200 rounded-3xl overflow-hidden">
-                        <div>
-                            <img src="./src/assets/project_1/A.png" alt="" />
-                        </div>
+                    <ProjectCard imgs={project_1}>
+
                         <div className="h-full p-4 flex flex-col gap-3 lg:gap-6">
-                            <div>
+                            <div className="mt-auto">
                                 {/* title */}
                                 <h1 className="text-3xl text-slate-700">Real Estate Web Application</h1>
                                 {/* date */}
@@ -89,8 +96,8 @@ function Projects() {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus sit veniam perspiciatis, 
                                 qui praesentium delectus dignissimos alias amet similique. Numquam dolorum iste fugit totam!
                             </p>
-                            {/* languages logo */}
-                            <div className="flex flex-wrap gap-1 mt-auto">
+                            {/* technologies logo */}
+                            <div className="hidden md:flex flex-wrap gap-1 ">
 
                                 <ProgrammingBadget >
                                     <FaLaravel />
@@ -126,7 +133,7 @@ function Projects() {
                                 </SecondaryBtn>
                             </div>
                         </div>
-                    </div>
+                    </ProjectCard>
                 </div>
 
             </div>
