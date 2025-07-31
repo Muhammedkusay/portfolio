@@ -12,7 +12,10 @@ import { FaJava } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 import ProgrammingBadget from "./ProgrammingBadget";
 import MacUI from "./MacUI";
-
+import mouseImg from "/public/assets/mouse.gif";
+import pythonImg from "/public/assets/python-icon.png" ;
+import cImg from "/public/assets/c-icon.png"; 
+import phoneVideo from "/public/assets/phone.webm";
 
 function AboutCards() {
 
@@ -22,7 +25,7 @@ function AboutCards() {
             <div className="pt-16 w-full lg:w-[70%] lg:col-span-2 flex flex-col md:gap-6 lg:gap-12 bg-white">
                 {/* mouse gif & title */}
                 <div className="flex gap-4 items-center">
-                    <img src="./src/assets/mouse.gif" alt="" className="w-28"/>
+                    <img src={mouseImg} alt="" className="w-28"/>
                     <p className="text-3xl lg:text-4xl font-semibold text-slate-700">Languages & Frameworks</p>
                 </div>
                
@@ -69,17 +72,17 @@ function AboutCards() {
                         <FaJava />
                     </ProgrammingBadget>
                     <ProgrammingBadget text="Python">
-                        <img src="./src/assets/python-icon.png" alt="Python" className="w-6 grayscale" />
+                        <img src={pythonImg} alt="Python" className="w-6 grayscale" />
                     </ProgrammingBadget>
                     <ProgrammingBadget text="C">
-                        <img src="./src/assets/c-icon.png" alt="C" className="w-6 grayscale" />
+                        <img src={cImg} alt="C" className="w-6 grayscale" />
                     </ProgrammingBadget>
                 </div>
             </div>
 
             {/* phone */}
             <div className="w-full lg:w-[30%] overflow-hidden">
-                <video src="./src/assets/phone.webm" autoPlay loop muted />
+                <video src={phoneVideo} autoPlay loop muted />
             </div>
 
         </div>

@@ -1,5 +1,7 @@
 import CvBtn from "./CvBtn";
 import SecondaryBtn from "./SecondaryBtn";
+import WorldIcon from "/public/assets/world_icon.gif"
+import ProfilePic from "/public/assets/profile_picture.png"
 
 function Hero() {
 
@@ -14,12 +16,12 @@ function Hero() {
                         focused on Full-Stack Web Development and building modern, useful tools.</p>
                         <div className="flex gap-2 pt-6">
                             <CvBtn />
-                            <img src="./src/assets/world_icon.gif" alt="" className="w-12 rotate-12 select-none"/>
+                            <img src={WorldIcon} alt="" className="w-12 rotate-12 select-none"/>
                         </div>
                     </div>
                     {/* profile pic */}
                     <div className="w-full md:w-5/12 pt-6 md:pt-0">
-                        <img src="/src/assets/profile_picture.png" alt="" 
+                        <img src={ProfilePic} alt="" 
                             className="grayscale drop-shadow-slate-300 drop-shadow-2xl opacity-95"/>
                     </div>
                 </div>

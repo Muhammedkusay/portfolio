@@ -31,13 +31,6 @@ function MacUI() {
                  Python, Java, and C through academic projects, algorithmic challenges, 
                 and problem-solving tasks.
             </p>
-    
-            {/* <div className="flex gap-3 justify-center px-6">
-                <img src="./src/assets/python-icon.png" alt="" className="size-7 md:size-8" />
-                <FaJava className="text-2xl md:text-3xl text-orange-500"/>
-                <img src="./src/assets/c-icon.png" alt="" className="size-7 md:size-8" />
-            </div>  */}
-
 
         </div>
     )

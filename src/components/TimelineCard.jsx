@@ -12,7 +12,7 @@ function TimelineCard({month, year, company, img, children}) {
             <h3 className="font-bold pb-2 text-sm">{company}</h3>
             {children && <div className="h-[83%] flex flex-col text-sm">{children}</div>}
 
-            <img src={img} alt="" className="h-48 w-auto absolute -bottom-1/3 -right-1/5 opacity-25" />
+            <img src={img} alt="" className="w-44 absolute -bottom-1/3 -right-1/5 opacity-10" />
         </div>
     )
 }

@@ -9,16 +9,20 @@ import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiGooglemaps } from "react-icons/si"
-
+import imgA from "/public/assets/project_1/A.png";
+import imgB from "/public/assets/project_1/B.png";
+import imgC from "/public/assets/project_1/C.png";
+import imgD from "/public/assets/project_1/D.png";
+import imgE from "/public/assets/project_1/E.png";
 
 function Projects() {
-
+    
     let project_1 = [
-        "./src/assets/project_1/A.png",
-        "./src/assets/project_1/B.png",
-        "./src/assets/project_1/C.png",
-        "./src/assets/project_1/D.png",
-        "./src/assets/project_1/E.png",
+        imgA,
+        imgB,
+        imgC,
+        imgD,
+        imgE,
     ]
 
     return(

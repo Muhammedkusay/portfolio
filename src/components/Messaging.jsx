@@ -3,7 +3,7 @@ import Logo from "./Logo"
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoMdSend } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
-
+import profile2 from "/public/assets/profile_2.jpg"
 
 function Messaging() {
 
@@ -24,7 +24,7 @@ function Messaging() {
             {/* img & name */}
             <div className="flex gap-3 items-center py-2.5 px-4 md:px-6 bg-slate-100 border-b border-b-slate-300 rounded-t-2xl md:rounded-t-4xl">
                 <div className="w-10 md:w-12 rounded-full overflow-hidden border-2 border-indigo-500">
-                    <img src="./src/assets/profile_2.jpg" alt="" />
+                    <img src={profile2} alt="" />
                 </div>
                 <div>
                     <p className="text-slate-600 font-semibold text-lg">Muhammed K.</p>
