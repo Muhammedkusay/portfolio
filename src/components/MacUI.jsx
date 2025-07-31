@@ -3,7 +3,7 @@ import { FiPlus } from "react-icons/fi";
 function MacUI() {
 
     return(
-        <div className="relative lg:w-1/2 flex flex-col gap-4 pb-4 md:pb-6 border border-slate-200 bg-white rounded-2xl md:rounded-4xl shadow-sm overflow-hidden">
+        <div className="relative lg:w-1/2 flex flex-col gap-4 pb-4 md:pb-6 border border-slate-300 bg-white rounded-2xl md:rounded-4xl overflow-hidden">
             {/* tab & options */}
             <div className="px-4 pt-4 md:pt-6 flex justify-between items-center rounded-t-2xl md:rounded-t-4xl bg-slate-100 border-b border-b-slate-300">
                 <div className="flex gap-1 items-center">
@@ -20,7 +20,7 @@ function MacUI() {
                     <div className="size-3 rounded-full bg-red-500 hover:bg-red-300 cursor-pointer"></div>
                 </div>
             </div>
-            {/* title & img*/}
+            {/* title */}
             <p className=" text-xl md:text-2xl mt-3 px-6 text-slate-600 font-semibold">What I Know?</p>
             {/* text */}
             <p className="z-20 text-slate-700 px-6">On the frontend, I work with HTML, CSS (Tailwind), JavaScript, and have experience using React and Alpine.js.

@@ -5,7 +5,7 @@ function ImageCarousel({ imgs }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
-        <div className="relative h-44 md:h-64 mb-4">
+        <div className="relative h-44 md:h-[350px] lg:h-72 mb-4">
                 <img src={imgs[currentIndex]} alt={`Project screenshot ${currentIndex + 1}`} className="absolute" loading="lazy"/>
             <div>
                 {/* right */}

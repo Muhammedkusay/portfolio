@@ -20,7 +20,7 @@ function Messaging() {
     }
 
     return(
-        <div className="lg:w-1/2 flex flex-col gap-4 pb-4 md:pb-6 border border-slate-200 rounded-2xl md:rounded-4xl shadow-sm">
+        <div className="lg:w-1/2 flex flex-col gap-4 pb-4 md:pb-6 border border-slate-300 rounded-2xl md:rounded-4xl">
             {/* img & name */}
             <div className="flex gap-3 items-center py-2.5 px-4 md:px-6 bg-slate-100 border-b border-b-slate-300 rounded-t-2xl md:rounded-t-4xl">
                 <div className="w-10 md:w-12 rounded-full overflow-hidden border-2 border-indigo-500">
