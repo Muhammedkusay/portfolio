@@ -6,7 +6,7 @@ import ProfilePic from "/public/assets/profile_picture.png"
 function Hero() {
 
     return(
-        <div className="bg-[url(./src/assets/bg.jpg)] bg-cover bg-no-repeat bg-center">
+        <div className="bg-[url(/public/assets/bg.jpg)] bg-cover bg-no-repeat bg-center">
             <div className="pt-6 bg-gradient-to-b from-white to-transparent overflow-hidden">
                 <div className="md:w-4/6 mx-auto px-4 md:px-0 flex flex-wrap items-center justify-between">
                     {/* hero section greeting */}
