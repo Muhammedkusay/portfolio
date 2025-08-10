@@ -1,7 +1,7 @@
 import TimelineCard from "./TimelineCard"
-import firatImg from "/public/assets/firat.png"
-import arslanImg from "/public/assets/arslantek.png"
-import intelliumImg from "/public/assets/intellium-logo.png"
+import firatImg from "/assets/firat.png"
+import arslanImg from "/assets/arslantek.png"
+import intelliumImg from "/assets/intellium-logo.png"
 
 function Timeline() {
 

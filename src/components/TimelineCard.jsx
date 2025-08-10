@@ -5,7 +5,7 @@ function TimelineCard({month, year, company, img, children}) {
         <div className="flex-1 relative border border-slate-300 rounded-2xl p-4">
             
             <div className="absolute -left-15 top-1/2 -translate-y-1/2 lg:-top-9 lg:left-1/2 lg:-translate-x-1/2 bg-white px-2">
-                <span className="">{month}</span>
+                <span className="hidden md:inline md:mr-1">{month}</span>
                 {year}
             </div>
 

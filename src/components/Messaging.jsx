@@ -3,7 +3,7 @@ import Logo from "./Logo"
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoMdSend } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
-import profile2 from "/public/assets/profile_2.jpg"
+import profile2 from "/assets/profile_2.jpg"
 
 function Messaging() {
 

@@ -1,12 +1,12 @@
 import CvBtn from "./CvBtn";
 import SecondaryBtn from "./SecondaryBtn";
-import WorldIcon from "/public/assets/world_icon.gif"
-import ProfilePic from "/public/assets/profile_picture.png"
+import WorldIcon from "/assets/world_icon.gif"
+import ProfilePic from "/assets/profile_picture.png"
 
 function Hero() {
 
     return(
-        <div className="bg-[url(/public/assets/bg.jpg)] bg-cover bg-no-repeat bg-center">
+        <div className="bg-[url(/assets/bg.jpg)] bg-cover bg-no-repeat bg-center">
             <div className="pt-6 bg-gradient-to-b from-white to-transparent overflow-hidden">
                 <div className="md:w-4/6 mx-auto px-4 md:px-0 flex flex-wrap items-center justify-between">
                     {/* hero section greeting */}

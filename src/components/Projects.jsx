@@ -9,11 +9,11 @@ import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiGooglemaps } from "react-icons/si"
-import imgA from "/public/assets/project_1/A.png";
-import imgB from "/public/assets/project_1/B.png";
-import imgC from "/public/assets/project_1/C.png";
-import imgD from "/public/assets/project_1/D.png";
-import imgE from "/public/assets/project_1/E.png";
+import imgA from "/assets/project_1/A.png";
+import imgB from "/assets/project_1/B.png";
+import imgC from "/assets/project_1/C.png";
+import imgD from "/assets/project_1/D.png";
+import imgE from "/assets/project_1/E.png";
 
 function Projects() {
     

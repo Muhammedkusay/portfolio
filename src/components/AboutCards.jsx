@@ -12,10 +12,10 @@ import { FaJava } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 import ProgrammingBadget from "./ProgrammingBadget";
 import MacUI from "./MacUI";
-import mouseImg from "/public/assets/mouse.gif";
-import pythonImg from "/public/assets/python-icon.png" ;
-import cImg from "/public/assets/c-icon.png"; 
-import phoneVideo from "/public/assets/phone.webm";
+import mouseImg from "/assets/mouse.gif";
+import pythonImg from "/assets/python-icon.png" ;
+import cImg from "/assets/c-icon.png"; 
+import phoneVideo from "/assets/phone.webm";
 
 function AboutCards() {
 
