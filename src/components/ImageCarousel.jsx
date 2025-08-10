@@ -6,7 +6,7 @@ function ImageCarousel({ imgs }) {
 
     return (
         <div className="relative h-44 md:h-[350px] lg:h-72 mb-4">
-                <img src={imgs[currentIndex]} alt={`Project screenshot ${currentIndex + 1}`} className="absolute" loading="lazy"/>
+                <img src={imgs[currentIndex]} alt={`Project screenshot ${currentIndex + 1}`} className="absolute" />
             <div>
                 {/* right */}
                 <button onClick={() => setCurrentIndex((currentIndex + 1) % imgs.length)} className="group text-slate-800 absolute right-0 mr-2 top-1/2 translate-y-1/2 bg-slate-50 opacity-90 cursor-pointer rounded-full p-2 shadow-sm border border-slate-400 hover:bg-slate-100 transition-colors duration-200">
