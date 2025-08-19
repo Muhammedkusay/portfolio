@@ -1,7 +1,7 @@
 import CvBtn from "./CvBtn";
 import SecondaryBtn from "./SecondaryBtn";
 import WorldIcon from "/assets/world_icon.gif"
-import ProfilePic from "/assets/profile_picture.png"
+import ProfilePic from "/assets/profile_picture.webp"
 
 function Hero() {
 
@@ -21,7 +21,9 @@ function Hero() {
                     </div>
                     {/* profile pic */}
                     <div className="w-full md:w-5/12 pt-6 md:pt-0">
-                        <img src={ProfilePic} alt="" 
+                        <img src={ProfilePic} 
+                            alt="Profile" 
+                            loading="lazy"    
                             className="grayscale drop-shadow-slate-300 drop-shadow-2xl opacity-95"/>
                     </div>
                 </div>
