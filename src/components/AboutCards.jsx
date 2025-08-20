@@ -13,7 +13,7 @@ import { SiPostgresql } from "react-icons/si";
 import ProgrammingBadget from "./ProgrammingBadget";
 import MacUI from "./MacUI";
 import mouseImg from "/assets/mouse.gif";
-import pythonImg from "/assets/python-icon.png" ;
+import pythonImg from "/assets/python-icon.webp" ;
 import cImg from "/assets/c-icon.png"; 
 import phoneVideo from "/assets/phone.webm";
 
@@ -25,7 +25,7 @@ function AboutCards() {
             <div className="pt-16 w-full lg:w-[70%] lg:col-span-2 flex flex-col md:gap-6 lg:gap-12 bg-white">
                 {/* mouse gif & title */}
                 <div className="flex gap-4 items-center">
-                    <img src={mouseImg} alt="" className="w-28"/>
+                    {/* <img src={mouseImg} alt="" className="w-28"/> */}
                     <p className="text-3xl lg:text-4xl font-semibold text-slate-700">Languages & Frameworks</p>
                 </div>
                
