@@ -11,7 +11,8 @@ function Timeline() {
 
                 <TimelineCard month="Sep" year="2022" company="Firat Uni.">
                     <p className="pb-2">Started Bachelor's in Software Engineering</p>
-                    <p className="pb-8">Graduation in <b>2026</b></p>
+                    <p>- Graduation in <b>2026</b></p>
+                    <p className="pb-8">- Current GPA <b>3.49</b></p>
                     <img src={firatImg} alt="" className="w-12 mt-auto"/>
                 </TimelineCard>
                 <TimelineCard month="Jul" year="2024" company="Arslan Tech.">

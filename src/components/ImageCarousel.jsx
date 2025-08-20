@@ -2,27 +2,36 @@ import { useState } from "react";
 
 function ImageCarousel({ imgs }) {
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-
     return (
-        <div className="relative h-44 md:h-[350px] lg:h-72 mb-4">
-                <img src={imgs[currentIndex]} alt={`Project screenshot ${currentIndex + 1}`} className="absolute" />
-            <div>
-                {/* right */}
-                <button onClick={() => setCurrentIndex((currentIndex + 1) % imgs.length)} className="group text-slate-800 absolute right-0 mr-2 top-1/2 translate-y-1/2 bg-slate-50 opacity-90 cursor-pointer rounded-full p-2 shadow-sm border border-slate-400 hover:bg-slate-100 transition-colors duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 group-hover:-translate-y-1 transition-transform duration-150">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                    </svg>
-                </button>
-
-                {/* left */}
-                <button onClick={() => setCurrentIndex((currentIndex - 1 + imgs.length) % imgs.length)} className="group text-slate-800 absolute left-0 ml-2 top-1/2 translate-y-1/2 bg-slate-50 opacity-90 cursor-pointer rounded-full p-2 shadow-sm border border-slate-400 hover:bg-slate-100 transition-colors duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 group-hover:-translate-y-1 transition-transform duration-150">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-                    </svg>
-                </button>
-
+        <div id="controls-carousel" className="relative w-full" data-carousel="static">
+            {/* Carousel wrapper */}
+            <div className="relative h-56 md:h-[300px] overflow-hidden rounded-lg">
+                {/* Items */}
+                {
+                    imgs.map((image, index) => (
+                        <div key={index} className="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src={image} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="project images" />
+                        </div>
+                    ))
+                }
             </div>
+            {/* Slider controls */}
+            <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-slate-800/30 group-hover:bg-white/50 dark:group-hover:bg-slate-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg className="w-4 h-4 text-white dark:text-slate-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span className="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-slate-800/30 group-hover:bg-white/50 dark:group-hover:bg-slate-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg className="w-4 h-4 text-white dark:text-slate-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span className="sr-only">Next</span>
+                </span>
+            </button>
         </div>
     )
 }
