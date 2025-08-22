@@ -1,15 +1,14 @@
-import { useState } from "react";
 
 function ImageCarousel({ imgs }) {
 
     return (
         <div id="controls-carousel" className="relative w-full" data-carousel="static">
             {/* Carousel wrapper */}
-            <div className="relative h-64 sm:h-72 md:h-[300px] overflow-hidden rounded-lg">
+            <div className="relative h-56 sm:h-64 md:h-[300px] overflow-hidden rounded-lg">
                 {/* Items */}
                 {
                     imgs.map((image, index) => (
-                        <div key={index} className={`${index === 0 ? "block" : "hidden"} duration-700 ease-in-out`} data-carousel-item>
+                        <div key={index} className="duration-700 ease-in-out" data-carousel-item >
                             <img src={image} className="w-full h-full object-cover" alt="project images" />
                         </div>
                     ))
