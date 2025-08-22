@@ -5,7 +5,7 @@ function ImageCarousel({ imgs }) {
     return (
         <div id="controls-carousel" className="relative w-full" data-carousel="static">
             {/* Carousel wrapper */}
-            <div className="relative h-56 md:h-[300px] overflow-hidden rounded-lg">
+            <div className="relative h-64 sm:h-72 md:h-[300px] overflow-hidden rounded-lg">
                 {/* Items */}
                 {
                     imgs.map((image, index) => (
