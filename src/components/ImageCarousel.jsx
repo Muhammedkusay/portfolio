@@ -10,7 +10,7 @@ function ImageCarousel({ imgs }) {
                 {
                     imgs.map((image, index) => (
                         <div key={index} className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src={image} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="project images" />
+                            <img src={image} className="block w-full h-full object-cover" alt="project images" />
                         </div>
                     ))
                 }
