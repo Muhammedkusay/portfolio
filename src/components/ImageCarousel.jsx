@@ -4,12 +4,12 @@ function ImageCarousel({ imgs }) {
     return (
         <div id="controls-carousel" className="relative w-full" data-carousel="static">
             {/* Carousel wrapper */}
-            <div className="relative h-56 sm:h-64 md:h-[300px] overflow-hidden rounded-lg">
+            <div className="relative h-56 overflow-hidden rounded-lg md:h-80">
                 {/* Items */}
                 {
                     imgs.map((image, index) => (
-                        <div key={index} className="duration-700 ease-in-out absolute inset-0 transition-transform transform translate-x-0 z-30" data-carousel-item="true" >
-                            <img src={image} className="w-full h-full object-cover" alt="project images" />
+                        <div key={index} className="hidden duration-700 ease-in-out" data-carousel-item >
+                            <img src={image} className="absolute block w-full h-full object-cover" alt="project images" />
                         </div>
                     ))
                 }
