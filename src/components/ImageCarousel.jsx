@@ -9,8 +9,8 @@ function ImageCarousel({ imgs }) {
                 {/* Items */}
                 {
                     imgs.map((image, index) => (
-                        <div key={index} className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src={image} className="block w-full h-full object-cover" alt="project images" />
+                        <div key={index} className={`${index === 0 ? "block" : "hidden"} duration-700 ease-in-out`} data-carousel-item>
+                            <img src={image} className="w-full h-full object-cover" alt="project images" />
                         </div>
                     ))
                 }
