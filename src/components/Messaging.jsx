@@ -56,7 +56,7 @@ function Messaging() {
             {/* send message */}
             <form className="flex gap-3 px-4 md:px-6">
                 <div className="w-full">
-                    <input type="text" className="w-full text-md md:text-lg text-slate-500 bg-slate-100 p-2 rounded-xl focus:outline-2 focus:outline-indigo-500 border border-slate-200" placeholder="Say Hello!" value={value} onChange={e => setValue(e.target.value)}/>
+                    <input type="text" className="w-full text-md md:text-lg text-slate-500 bg-slate-100 p-2 rounded-xl border border-slate-200" placeholder="Say Hello!" value={value} onChange={e => setValue(e.target.value)}/>
                 </div>
                 <button type="submit" onClick={e => handleMessage(e)} className="bg-slate-100 p-2 px-2.5 rounded-xl border border-slate-200 hover:bg-slate-200 cursor-pointer">
                     <IoMdSend className="text-2xl text-indigo-500" />

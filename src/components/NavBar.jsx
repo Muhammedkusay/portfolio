@@ -3,6 +3,7 @@ import SecondaryBtn from "./SecondaryBtn";
 import { HiOutlineHome } from "react-icons/hi2";
 import { HiOutlineInformationCircle } from "react-icons/hi2";
 import { GoPaperclip } from "react-icons/go";
+import { FaLinkedin } from "react-icons/fa";
 
 
 function NavBar() {
@@ -29,7 +30,13 @@ function NavBar() {
                     </a>
 
                 </div>
-                <SecondaryBtn text={"Contact"} href={"/"}/>
+                
+                <SecondaryBtn href={"https://linkedin.com/in/mkusay"} target="_blank">
+                    <div className="flex items-center gap-0.5">
+                        <span className="hidden md:block">Linked</span>
+                        <FaLinkedin className="text-xl md:text-md"/>
+                    </div>
+                </SecondaryBtn>
             </header>
         </nav>
     )
