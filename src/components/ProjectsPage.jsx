@@ -1,4 +1,5 @@
-import Title from "./Title"
+import Footer from "./Footer"
+import NavBar from "./NavBar"
 import ProjectCard from "./ProjectCard"
 import ProgrammingBadget from "./ProgrammingBadget"
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaLaravel } from "react-icons/fa"
@@ -25,10 +26,9 @@ import imgDProjectOne from "/assets/project_3/D.webp"
 import imgEProjectOne from "/assets/project_3/E.webp"
 import imgFProjectOne from "/assets/project_3/F.webp"
 import imgGProjectOne from "/assets/project_3/G.webp"
-import ViewProjectsPage from "./ViewProjectsPage"
 
-function Projects() {
-    
+function ProjectsPage() {
+
     let project_1 = {
         title: "Project Management System",
         date: "Aug 2025",
@@ -76,9 +76,10 @@ function Projects() {
     }
 
     return(
-        <section id="projects" className="px-4 md:px-0 pt-16 md:pt-18 md:mt-32 min-h-[1200px]">
-            <Title text={"Projects"} />
-            <div className="w-full md:w-3/4 mx-auto mt-12 md:mt-28">
+        <>
+            <NavBar />
+            <div className="md:w-4/5 mx-auto py-4 px-4 md:px-0">
+                <h1 className="text-3xl md:text-4xl py-6">Projects</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
                     
                     {/* card */}
@@ -170,13 +171,11 @@ function Projects() {
                         </div>
                     </ProjectCard>
 
-                    {/* view all projects card */}
-                    <ViewProjectsPage />
-      
                 </div>
             </div>
-        </section>
+            <Footer />
+        </>
     )
 }
 
-export default Projects
+export default ProjectsPage

@@ -1,20 +1,15 @@
-import About from "./components/About"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import NavBar from "./components/NavBar"
-import Projects from "./components/Projects"
-import StartAnimation from "./components/StartAnimation"
+import { Route, Routes } from "react-router-dom"
+import ProjectsPage from "./components/ProjectsPage"
+import Home from "./components/Home"
 
 function App() {
 
   return (
     <>
-      {/* <StartAnimation /> */}
-      <NavBar />
-      <Hero />
-      <About />
-      <Projects />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
     </>
   )
 }
