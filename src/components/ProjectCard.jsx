@@ -1,5 +1,6 @@
 import ImageCarousel from "./ImageCarousel";
 import SecondaryBtn from "./SecondaryBtn";
+import PrimaryBtn from "./PrimaryBtn";
 
 function ProjectCard({ project, children }) {
 
@@ -21,8 +22,11 @@ function ProjectCard({ project, children }) {
                 {children}
                 {/* links */}
                 <div className="flex items-center gap-3">
-                    <SecondaryBtn width="100%" text="View Repo" href={project.link} target="_blank">
-                    </SecondaryBtn>
+                    <SecondaryBtn width="100%" text="View Repo" href={project.links[0]} target="_blank" />
+                    {
+                    project.links[1] &&               
+                    <PrimaryBtn width="100%" text="Try Now" href={project.links[1]} target="_blank" />
+                    }
                 </div>
             </div>
             

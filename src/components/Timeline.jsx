@@ -18,13 +18,13 @@ function Timeline() {
                 <TimelineCard month="Jul" year="2024" company="Arslan Tech.">
                     <p className="pb-2">Software Engineer Intern</p>
                     <p>- Fullstack web development</p>
-                    <p className="pb-8">- Real estate web application</p>
+                    <p className="pb-8">- Building Real estate web application</p>
                     <img src={arslanImg} alt="" className="w-11 mt-auto"/>
                 </TimelineCard>
                 <TimelineCard month="Jul" year="2025" company="Intellium">
                     <p className="pb-2">Software Engineer Intern</p>
                     <p>- Fullstack web development</p>
-                    <p className="pb-8">- Project Management System</p>
+                    <p className="pb-8">- Building a Project Management System</p>
                     <img src={intelliumImg} alt="" className="w-32 mt-auto"/>
                 </TimelineCard>
 

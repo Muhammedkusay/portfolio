@@ -2,12 +2,13 @@ import Footer from "./Footer"
 import NavBar from "./NavBar"
 import ProjectCard from "./ProjectCard"
 import ProgrammingBadget from "./ProgrammingBadget"
-import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaLaravel } from "react-icons/fa"
+import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaLaravel, FaReact } from "react-icons/fa"
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiSqlite, SiGooglemaps, SiPostgresql, SiAlpinedotjs } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { SiSqlite, SiGooglemaps, SiPostgresql, SiAlpinedotjs, SiTensorflow } from "react-icons/si";
 import imgAProjectThree from "/assets/project_2/A.webp";
 import imgBProjectThree from "/assets/project_2/B.webp";
 import imgCProjectThree from "/assets/project_2/C.webp";
@@ -26,6 +27,11 @@ import imgDProjectOne from "/assets/project_3/D.webp"
 import imgEProjectOne from "/assets/project_3/E.webp"
 import imgFProjectOne from "/assets/project_3/F.webp"
 import imgGProjectOne from "/assets/project_3/G.webp"
+import imgAProjectFour from "/assets/project_4/A.webp"
+import imgBProjectFour from "/assets/project_4/B.webp"
+import imgCProjectFour from "/assets/project_4/C.webp"
+import imgDProjectFour from "/assets/project_4/D.webp"
+import imgAProjectFive from "/assets/project_5/A.webp"
 
 function ProjectsPage() {
 
@@ -33,7 +39,7 @@ function ProjectsPage() {
         title: "Project Management System",
         date: "Aug 2025",
         text: "A project management application developed using Laravel, Tailwind CSS, Alpine.js, and Chart.js. It allows users to create and manage projects, track progress, and visualize data through interactive charts",
-        link: "https://github.com/Muhammedkusay/taskflow",
+        links: ["https://github.com/Muhammedkusay/taskflow"],
         imgs: [
             imgAProjectOne,
             imgBProjectOne,
@@ -49,7 +55,7 @@ function ProjectsPage() {
         title: "Real Estate Web Application",
         date: "Jul 2024",
         text: "A full-featured real estate platform developed with Laravel and Tailwind CSS. Allows users to post and browse property listings with detailed information, includinglocation via Google Maps integration. ",
-        link: "https://github.com/Muhammedkusay/Emlakbul/tree/master",
+        links: ["https://github.com/Muhammedkusay/Emlakbul/tree/master"],
         imgs: [
             imgAProjectTwo,
             imgBProjectTwo,
@@ -64,7 +70,7 @@ function ProjectsPage() {
         title: "Blog Platform",
         date: "Jul 2025",
         text: "A dynamic blog system built with Laravel, Tailwind CSS, and Alpine.js. Users can create, edit, and manage posts with file upload support. The platform includes authentication to manage user accounts and access.",
-        link: "https://github.com/Muhammedkusay/Medium-clone",
+        links: ["https://github.com/Muhammedkusay/Medium-clone"],
         imgs: [
 
             imgAProjectThree,
@@ -72,6 +78,33 @@ function ProjectsPage() {
             imgCProjectThree,
             imgDProjectThree,
             imgEProjectThree,
+        ]
+    }
+
+    let project_4 = {
+        title: "Gym Exercises React App",
+        date: "Feb 2025",
+        text: "A React-based application for exploring gym exercises, built using Material UI and integrated with RapidAPI. Users can browse exercise routines, view details, and interact with dynamic data fetched from external APIs.",
+        links: ["https://github.com/Muhammedkusay/GymApp"],
+        imgs: [
+
+            imgAProjectFour,
+            imgBProjectFour,
+            imgCProjectFour,
+            imgDProjectFour,
+        ]
+    }
+
+    let project_5 = {
+        title: "Object Detection Web App",
+        date: "Aug 2025",
+        text: "An multi-object detection app based on tensorflow js/coco-ssd model. Can detect over 80 objects with supporting of flipping the camera for phones.",
+        links: [
+            "https://github.com/Muhammedkusay/ObjectDetectionTF",
+            "https://objectdet.netlify.app/"
+        ],
+        imgs: [
+            imgAProjectFive,
         ]
     }
 
@@ -167,6 +200,52 @@ function ProjectsPage() {
                             </ProgrammingBadget>
                             <ProgrammingBadget >
                                 <RiTailwindCssFill />
+                            </ProgrammingBadget>
+                        </div>
+                    </ProjectCard>
+                    
+                    {/* card */}
+                    <ProjectCard project={project_5}>
+                        {/* technologies logo */}
+                        <div className="hidden md:flex flex-wrap gap-1 ">
+
+                            <ProgrammingBadget >
+                                <FaReact />
+                            </ProgrammingBadget>   
+                            <ProgrammingBadget >
+                                <SiTensorflow />
+                            </ProgrammingBadget>
+                            <ProgrammingBadget >
+                                <RiTailwindCssFill />
+                            </ProgrammingBadget>
+                            <ProgrammingBadget >
+                                <FaGitAlt />
+                            </ProgrammingBadget>
+                            <ProgrammingBadget >
+                                <FaHtml5 />
+                            </ProgrammingBadget>
+                        </div>
+                    </ProjectCard>
+                    
+                    {/* card */}
+                    <ProjectCard project={project_4}>
+                        {/* technologies logo */}
+                        <div className="hidden md:flex flex-wrap gap-1 ">
+
+                            <ProgrammingBadget >
+                                <FaReact />
+                            </ProgrammingBadget>   
+                            <ProgrammingBadget >
+                                <TbApi />
+                            </ProgrammingBadget>
+                            <ProgrammingBadget >
+                                <FaGitAlt />
+                            </ProgrammingBadget>
+                            <ProgrammingBadget >
+                                <FaHtml5 />
+                            </ProgrammingBadget>
+                            <ProgrammingBadget >
+                                <FaCss3Alt />
                             </ProgrammingBadget>
                         </div>
                     </ProjectCard>

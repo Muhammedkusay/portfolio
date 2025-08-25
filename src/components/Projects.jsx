@@ -33,7 +33,7 @@ function Projects() {
         title: "Project Management System",
         date: "Aug 2025",
         text: "A project management application developed using Laravel, Tailwind CSS, Alpine.js, and Chart.js. It allows users to create and manage projects, track progress, and visualize data through interactive charts",
-        link: "https://github.com/Muhammedkusay/taskflow",
+        links: ["https://github.com/Muhammedkusay/taskflow"],
         imgs: [
             imgAProjectOne,
             imgBProjectOne,
@@ -49,7 +49,7 @@ function Projects() {
         title: "Real Estate Web Application",
         date: "Jul 2024",
         text: "A full-featured real estate platform developed with Laravel and Tailwind CSS. Allows users to post and browse property listings with detailed information, includinglocation via Google Maps integration. ",
-        link: "https://github.com/Muhammedkusay/Emlakbul/tree/master",
+        links: ["https://github.com/Muhammedkusay/Emlakbul/tree/master"],
         imgs: [
             imgAProjectTwo,
             imgBProjectTwo,
@@ -64,7 +64,7 @@ function Projects() {
         title: "Blog Platform",
         date: "Jul 2025",
         text: "A dynamic blog system built with Laravel, Tailwind CSS, and Alpine.js. Users can create, edit, and manage posts with file upload support. The platform includes authentication to manage user accounts and access.",
-        link: "https://github.com/Muhammedkusay/Medium-clone",
+        links: ["https://github.com/Muhammedkusay/Medium-clone"],
         imgs: [
 
             imgAProjectThree,
