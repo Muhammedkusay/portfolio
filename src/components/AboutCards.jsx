@@ -1,20 +1,16 @@
+// React Icons - UI & Frameworks
 import { LuMonitorDot } from "react-icons/lu";
-import { FaLaravel } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaLaravel, FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
-import { FaGitAlt } from "react-icons/fa";
-import { SiAlpinedotjs } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
-import { SiPostgresql } from "react-icons/si";
+import { SiAlpinedotjs, SiPostgresql } from "react-icons/si";
+
+// Components
 import ProgrammingBadget from "./ProgrammingBadget";
-import MacUI from "./MacUI";
-import mouseImg from "/assets/mouse.gif";
-import pythonImg from "/assets/python-icon.webp" ;
-import cImg from "/assets/c-icon.png"; 
+
+// Assets
+import cImg from "/assets/c-icon.png";
 import phoneVideo from "/assets/phone.webm";
 
 function AboutCards() {
@@ -72,7 +68,7 @@ function AboutCards() {
                         <FaJava />
                     </ProgrammingBadget>
                     <ProgrammingBadget text="Python">
-                        <img src={pythonImg} alt="Python" className="w-6 grayscale" />
+                        <FaPython />
                     </ProgrammingBadget>
                     <ProgrammingBadget text="C">
                         <img src={cImg} alt="C" className="w-6 grayscale" />

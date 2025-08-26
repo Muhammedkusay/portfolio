@@ -1,37 +1,50 @@
-import Footer from "./Footer"
-import NavBar from "./NavBar"
-import ProjectCard from "./ProjectCard"
-import ProgrammingBadget from "./ProgrammingBadget"
-import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaLaravel, FaReact } from "react-icons/fa"
-import { BsBoxArrowUpRight } from "react-icons/bs";
+// Components
+import Footer from "./Footer";
+import NavBar from "./NavBar";
+import ProjectCard from "./ProjectCard";
+import ProgrammingBadget from "./ProgrammingBadget";
+
+// Icons
+import { FaCss3Alt, FaGitAlt, FaHtml5, FaLaravel, FaReact } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbApi } from "react-icons/tb";
 import { SiSqlite, SiGooglemaps, SiPostgresql, SiAlpinedotjs, SiTensorflow } from "react-icons/si";
+
+// Assets - Project Three
 import imgAProjectThree from "/assets/project_2/A.webp";
 import imgBProjectThree from "/assets/project_2/B.webp";
 import imgCProjectThree from "/assets/project_2/C.webp";
 import imgDProjectThree from "/assets/project_2/D.webp";
 import imgEProjectThree from "/assets/project_2/E.webp";
+
+// Assets - Project Two
 import imgAProjectTwo from "/assets/project_1/A.webp";
 import imgBProjectTwo from "/assets/project_1/B.webp";
 import imgCProjectTwo from "/assets/project_1/C.webp";
 import imgDProjectTwo from "/assets/project_1/D.webp";
 import imgEProjectTwo from "/assets/project_1/E.webp";
 import imgFProjectTwo from "/assets/project_1/F.webp";
-import imgAProjectOne from "/assets/project_3/A.webp"
-import imgBProjectOne from "/assets/project_3/B.webp"
-import imgCProjectOne from "/assets/project_3/C.webp"
-import imgDProjectOne from "/assets/project_3/D.webp"
-import imgEProjectOne from "/assets/project_3/E.webp"
-import imgFProjectOne from "/assets/project_3/F.webp"
-import imgGProjectOne from "/assets/project_3/G.webp"
-import imgAProjectFour from "/assets/project_4/A.webp"
-import imgBProjectFour from "/assets/project_4/B.webp"
-import imgCProjectFour from "/assets/project_4/C.webp"
-import imgDProjectFour from "/assets/project_4/D.webp"
-import imgAProjectFive from "/assets/project_5/A.webp"
+
+// Assets - Project One
+import imgAProjectOne from "/assets/project_3/A.webp";
+import imgBProjectOne from "/assets/project_3/B.webp";
+import imgCProjectOne from "/assets/project_3/C.webp";
+import imgDProjectOne from "/assets/project_3/D.webp";
+import imgEProjectOne from "/assets/project_3/E.webp";
+import imgFProjectOne from "/assets/project_3/F.webp";
+import imgGProjectOne from "/assets/project_3/G.webp";
+
+// Assets - Project Four
+import imgAProjectFour from "/assets/project_4/A.webp";
+import imgBProjectFour from "/assets/project_4/B.webp";
+import imgCProjectFour from "/assets/project_4/C.webp";
+import imgDProjectFour from "/assets/project_4/D.webp";
+
+// Assets - Project Five
+import imgAProjectFive from "/assets/project_5/A.webp";
+
 
 function ProjectsPage() {
 
