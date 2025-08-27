@@ -1,16 +1,38 @@
-import StartAnimation from "./StartAnimation"
+import Loader from "./Loader"
 import NavBar from "./NavBar"
 import Hero from "./Hero"
 import About from "./About"
 import Projects from "./Projects"
 import Stats from "./Stats"
 import Footer from "./Footer"
+import { useEffect, useState } from "react"
 
 function Home() {
 
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+
+        const handleLoad = () => {
+            setLoading(false)
+        } 
+
+        if(document.readyState == 'complete') {
+            setLoading(false)
+        } else {
+            window.addEventListener('load', handleLoad)
+        }
+
+        return() => window.removeEventListener('load', handleLoad)
+
+    }, [])
+
+    if(loading) {
+        return(<Loader />)
+    }
+
     return(
         <>
-            {/* <StartAnimation /> */}
             <NavBar />
             <Hero />
             <About />
