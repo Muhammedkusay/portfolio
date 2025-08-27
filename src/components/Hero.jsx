@@ -1,7 +1,6 @@
 import CvBtn from "./CvBtn";
-import SecondaryBtn from "./SecondaryBtn";
+import HeroImg from "./HeroImg";
 import WorldIcon from "/assets/world_icon.gif"
-import ProfilePic from "/assets/profile_picture.webp"
 
 function Hero() {
 
@@ -16,16 +15,11 @@ function Hero() {
                         I build modern, efficient web applications that turn ideas into practical solutions.</p>
                         <div className="flex gap-2 pt-6">
                             <CvBtn />
-                            <img src={WorldIcon} alt="" className="w-12 rotate-12 select-none"/>
+                            <img src={WorldIcon} alt="" className="w-12 z-50 rotate-12 select-none"/>
                         </div>
                     </div>
                     {/* profile pic */}
-                    <div className="w-full md:w-5/12 pt-6 md:pt-0">
-                        <img src={ProfilePic} 
-                            alt="Profile" 
-                            loading="lazy"    
-                            className="grayscale drop-shadow-slate-300 drop-shadow-2xl opacity-95"/>
-                    </div>
+                    <HeroImg />
                 </div>
             </div>
         </div>
