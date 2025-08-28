@@ -29,7 +29,7 @@ const comp = useRef(null)
                 // stagger: 0.075,
             })
             .to(['#element-1', '#element-2', '#element-3', '#element-4', '#element-5', '#element-6'], {
-                y: window.innerWidth < 768 ? '-=20' : '-=40',
+                y: window.innerWidth < 768 ? '-=14' : '-=40',
                 x: (i) => ["-=30", "-=30", "-=30", "+=20", "+=20", '+=20'][i],
                 duration: (i) => ["16", "18", "20", "16", "18", '20'][i],
             })
