@@ -10,11 +10,11 @@ function ImageCarousel({ imgs }) {
                     window.innerWidth > 600 ? 
                     imgs.map((image, index) => (
                         <div key={index} className="hidden duration-700 ease-in-out" data-carousel-item >
-                            <img src={image} className="absolute block w-full h-full object-cover" alt="project images" />
+                            <img src={image} className="absolute block w-full h-full object-cover" alt="project images" loading="lazy" />
                         </div>
                     )) :
                     <div className="block">
-                        <img src={imgs[0]} className="absolute block w-full h-full object-cover" alt="project image" />
+                        <img src={imgs[0]} className="absolute block w-full h-full object-cover" alt="project image" loading="lazy" />
                     </div>
                 }
             </div>

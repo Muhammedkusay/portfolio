@@ -15,7 +15,7 @@ function Hero() {
                         I build modern, efficient web applications that turn ideas into practical solutions.</p>
                         <div className="flex gap-2 pt-6">
                             <CvBtn />
-                            <img src={WorldIcon} alt="" className="w-12 z-50 rotate-12 select-none"/>
+                            <img src={WorldIcon} alt="" className="w-12 z-50 rotate-12 select-none" loading="lazy"/>
                         </div>
                     </div>
                     {/* profile pic */}
