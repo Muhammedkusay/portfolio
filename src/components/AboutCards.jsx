@@ -20,9 +20,9 @@ import cImg from "/assets/c-icon.png";
 function AboutCards() {
 
     return(
-        <div className="mt-8 flex flex-col lg:flex-row gap-8 items-center justify-between border border-slate-300 rounded-4xl overflow-hidden">
+        <div className="mt-8 flex flex-col lg:flex-row gap-8 items-center justify-between border border-slate-300 rounded-2xl md:rounded-4xl overflow-hidden">
 
-            <div className="w-full lg:w-[70%] mt-6 md:mt-0 px-8 md:pr-0 flex flex-col gap-6 lg:gap-8 bg-white">
+            <div className="w-full lg:w-[70%] mt-6 lg:mt-0 px-8 md:pr-0 flex flex-col gap-6 lg:gap-8 bg-white">
                 {/* mouse gif & title */}
                 <p className="text-3xl lg:text-4xl font-semibold text-slate-700">Languages & Frameworks</p>
                
@@ -54,7 +54,7 @@ function AboutCards() {
                                 <HiOutlinePaintBrush className="text-2xl text-indigo-700" />
                                 <h3>Frontend</h3>
                             </div>
-                            <div className="flex flex-wrap gap-1">
+                            <div className="flex flex-wrap gap-2 md:gap-1.5">
                                 <ProgrammingBadget text="React js">
                                     <FaReact />
                                 </ProgrammingBadget>
@@ -83,7 +83,7 @@ function AboutCards() {
                                 <BsDatabase className="text-2xl text-indigo-700" />
                                 <h3>Backend</h3>
                             </div>
-                            <div className="flex flex-wrap gap-1">
+                            <div className="flex flex-wrap gap-2 md:gap-1.5">
                                 <ProgrammingBadget text="Laravel">
                                     <FaLaravel />
                                 </ProgrammingBadget>   
@@ -103,7 +103,7 @@ function AboutCards() {
                                 <IoCodeSlashOutline className="text-2xl text-indigo-700" />
                                 <h3>Other</h3>
                             </div>
-                            <div className="flex flex-wrap gap-1">
+                            <div className="flex flex-wrap gap-2 md:gap-1.5">
                                 <ProgrammingBadget text="Git">
                                     <FaGitAlt className="text-2xl text-slate-700" />
                                 </ProgrammingBadget>
