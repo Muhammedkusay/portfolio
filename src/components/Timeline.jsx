@@ -6,7 +6,7 @@ import intelliumImg from "/assets/intellium-logo.png"
 function Timeline() {
 
     return(
-        <div className="mt-24 md:mt-36 lg:mt-44">
+        <div className="mt-32 md:mt-44 lg:mt-52">
             <div className="h-full lg:w-full border-slate-300 border-l lg:border-l-0 lg:border-t flex flex-col lg:flex-row justify-between gap-10 ml-4 lg:ml-0 pl-8 lg:pl-0 lg:pt-8 text-slate-700">
 
                 <TimelineCard month="Sep" year="2022" company="Firat Uni.">

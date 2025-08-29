@@ -2,7 +2,7 @@
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import ProjectCard from "./ProjectCard";
-import ProgrammingBadget from "./ProgrammingBadget";
+import ProjectBadge from "./ProjectBadge";
 
 // Icons
 import { FaCss3Alt, FaGitAlt, FaHtml5, FaLaravel, FaReact } from "react-icons/fa";
@@ -132,30 +132,30 @@ function ProjectsPage() {
                     <ProjectCard project={project_1}>
                         {/* technologies logo */}
                         <div className="hidden md:flex flex-wrap gap-1 ">
-                            <ProgrammingBadget >
+                            <ProjectBadge >
                                 <FaLaravel />
-                            </ProgrammingBadget>   
-                            <ProgrammingBadget >
+                            </ProjectBadge>   
+                            <ProjectBadge >
                                 <SiPostgresql />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaGitAlt />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaHtml5 />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaCss3Alt />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <IoLogoJavascript />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <SiAlpinedotjs />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <RiTailwindCssFill />
-                            </ProgrammingBadget>
+                            </ProjectBadge>
                         </div>
                     </ProjectCard>
 
@@ -164,27 +164,27 @@ function ProjectsPage() {
                         {/* technologies logo */}
                         <div className="hidden md:flex flex-wrap gap-1 ">
 
-                            <ProgrammingBadget >
+                            <ProjectBadge >
                                 <FaLaravel />
-                            </ProgrammingBadget>   
-                            <ProgrammingBadget >
+                            </ProjectBadge>   
+                            <ProjectBadge >
                                 <GrMysql />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaGitAlt />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaHtml5 />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <IoLogoJavascript />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <RiTailwindCssFill />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <SiGooglemaps />
-                            </ProgrammingBadget>
+                            </ProjectBadge>
                         </div>
                     </ProjectCard>
 
@@ -193,27 +193,27 @@ function ProjectsPage() {
                         {/* technologies logo */}
                         <div className="hidden md:flex flex-wrap gap-1 ">
 
-                            <ProgrammingBadget >
+                            <ProjectBadge >
                                 <FaLaravel />
-                            </ProgrammingBadget>   
-                            <ProgrammingBadget >
+                            </ProjectBadge>   
+                            <ProjectBadge >
                                 <SiSqlite />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaGitAlt />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaHtml5 />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <IoLogoJavascript />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <SiAlpinedotjs />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <RiTailwindCssFill />
-                            </ProgrammingBadget>
+                            </ProjectBadge>
                         </div>
                     </ProjectCard>
                     
@@ -222,21 +222,21 @@ function ProjectsPage() {
                         {/* technologies logo */}
                         <div className="hidden md:flex flex-wrap gap-1 ">
 
-                            <ProgrammingBadget >
+                            <ProjectBadge >
                                 <FaReact />
-                            </ProgrammingBadget>   
-                            <ProgrammingBadget >
+                            </ProjectBadge>   
+                            <ProjectBadge >
                                 <SiTensorflow />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <RiTailwindCssFill />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaGitAlt />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaHtml5 />
-                            </ProgrammingBadget>
+                            </ProjectBadge>
                         </div>
                     </ProjectCard>
                     
@@ -245,21 +245,21 @@ function ProjectsPage() {
                         {/* technologies logo */}
                         <div className="hidden md:flex flex-wrap gap-1 ">
 
-                            <ProgrammingBadget >
+                            <ProjectBadge >
                                 <FaReact />
-                            </ProgrammingBadget>   
-                            <ProgrammingBadget >
+                            </ProjectBadge>   
+                            <ProjectBadge >
                                 <TbApi />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaGitAlt />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaHtml5 />
-                            </ProgrammingBadget>
-                            <ProgrammingBadget >
+                            </ProjectBadge>
+                            <ProjectBadge >
                                 <FaCss3Alt />
-                            </ProgrammingBadget>
+                            </ProjectBadge>
                         </div>
                     </ProjectCard>
 

@@ -2,10 +2,10 @@
 function ProgrammingBadget({text, children}) {
 
     return(
-        <div className="size-11 md:w-fit md:h-11 md:px-2.5 flex items-center justify-center rounded-full bg-slate-50 border">
+        <div className="size-18 md:size-21 flex flex-col items-center justify-center gap-0.5 rounded-xl md:rounded-2xl bg-slate-50 border border-slate-500">
 
             {children && <span className="text-2xl text-slate-700">{children}</span>}
-            {text && <p className="hidden md:block pl-1.5 text-slate-700 text-sm">{text}</p>}
+            {text && <p className="text-slate-700 text-sm">{text}</p>}
         </div>
     )
 }
