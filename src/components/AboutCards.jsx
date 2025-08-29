@@ -1,7 +1,6 @@
 // React Icons - UI & Frameworks
-import { FaLaravel, FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava, FaGithub } from "react-icons/fa";
+import { FaLaravel, FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava, FaGithub, FaPhp, FaJs } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
-import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 import { SiAlpinedotjs, SiPostgresql } from "react-icons/si";
@@ -68,7 +67,7 @@ function AboutCards() {
                                     <FaCss3Alt />
                                 </ProgrammingBadget>
                                 <ProgrammingBadget text="Javascript">
-                                    <IoLogoJavascript />
+                                    <FaJs />
                                 </ProgrammingBadget>
                                 <ProgrammingBadget text="Alpine js">
                                     <SiAlpinedotjs />
@@ -86,6 +85,9 @@ function AboutCards() {
                             <div className="flex flex-wrap gap-2 md:gap-1.5">
                                 <ProgrammingBadget text="Laravel">
                                     <FaLaravel />
+                                </ProgrammingBadget>   
+                                <ProgrammingBadget text="Php">
+                                    <FaPhp />
                                 </ProgrammingBadget>   
                                 <ProgrammingBadget text="PostgreSql">
                                     <SiPostgresql />
