@@ -14,7 +14,7 @@ function Footer() {
                         About
                     </a>
                     <a href="/projects" className='hover:underline text-slate-700'>
-                        Project
+                        Projects
                     </a>
                 </div>
                 <div className="flex flex-col gap-1.5">
@@ -29,7 +29,6 @@ function Footer() {
                     </a>
                 </div>
             </div>
-            <a href="https://lordicon.com/" className='absolute left-2 bottom-1'>Icons by Lordicon.com</a>
         </footer>
     )
 }
