@@ -1,16 +1,15 @@
 // React Icons - UI & Frameworks
 import { FaLaravel, FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava, FaGithub, FaPhp, FaJs } from "react-icons/fa";
-import { AiOutlinePython } from "react-icons/ai";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 import { SiAlpinedotjs, SiPostgresql } from "react-icons/si";
 import { HiOutlinePaintBrush } from "react-icons/hi2";
 import { BsDatabase } from "react-icons/bs";
-import { IoCodeSlashOutline } from "react-icons/io5";
+import { IoCodeSlashOutline, IoLogoPython } from "react-icons/io5";
 
 // Components
 import SecondaryBtn from "./SecondaryBtn";
-import ProgrammingBadget from "./ProgrammingBadget";
+import ProgrammingBadge from "./ProgrammingBadge";
 import CardSwap, { Card } from './CardSwap'
 
 // Assets
@@ -54,24 +53,24 @@ function AboutCards() {
                                 <h3>Frontend</h3>
                             </div>
                             <div className="flex flex-wrap gap-2 md:gap-1.5">
-                                <ProgrammingBadget text="React js">
+                                <ProgrammingBadge text="React js">
                                     <FaReact />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="Tailwind">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Tailwind">
                                     <RiTailwindCssFill />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="Html">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Html">
                                     <FaHtml5 />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="Css">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Css">
                                     <FaCss3Alt />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="Javascript">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Javascript">
                                     <FaJs />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="Alpine js">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Alpine js">
                                     <SiAlpinedotjs />
-                                </ProgrammingBadget>
+                                </ProgrammingBadge>
                             </div>
                         </div>
                     </Card>
@@ -83,18 +82,18 @@ function AboutCards() {
                                 <h3>Backend</h3>
                             </div>
                             <div className="flex flex-wrap gap-2 md:gap-1.5">
-                                <ProgrammingBadget text="Laravel">
+                                <ProgrammingBadge text="Laravel">
                                     <FaLaravel />
-                                </ProgrammingBadget>   
-                                <ProgrammingBadget text="Php">
+                                </ProgrammingBadge>   
+                                <ProgrammingBadge text="Php">
                                     <FaPhp />
-                                </ProgrammingBadget>   
-                                <ProgrammingBadget text="PostgreSql">
+                                </ProgrammingBadge>   
+                                <ProgrammingBadge text="PostgreSql">
                                     <SiPostgresql />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="MySql">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="MySql">
                                     <GrMysql />
-                                </ProgrammingBadget>
+                                </ProgrammingBadge>
                             </div>
                         </div>
                     </Card>
@@ -106,19 +105,18 @@ function AboutCards() {
                                 <h3>Other</h3>
                             </div>
                             <div className="flex flex-wrap gap-2 md:gap-1.5">
-                                <ProgrammingBadget text="Git">
+                                <ProgrammingBadge text="Git">
                                     <FaGitAlt className="text-2xl text-slate-700" />
-                                </ProgrammingBadget>
-                                
-                                <ProgrammingBadget text="Java">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Java">
                                     <FaJava />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="Python">
-                                    <AiOutlinePython />
-                                </ProgrammingBadget>
-                                <ProgrammingBadget text="C">
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Python">
+                                    <IoLogoPython />
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="C">
                                     <img src={cImg} alt="C" className="w-6 grayscale" />
-                                </ProgrammingBadget>
+                                </ProgrammingBadge>
                             </div>
                         </div>
                     </Card>

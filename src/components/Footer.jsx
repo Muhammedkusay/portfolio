@@ -3,7 +3,7 @@ import LargeLogo from './LargeLogo'
 function Footer() {
     
     return (
-        <footer className="relative bg-gray-100 p-4 pb-16 md:pb-24 md:p-12 mt-24 md:mt-32 lg:mt-40">
+        <footer className="relative bg-gray-100 p-4 md:p-12 mt-24 md:mt-32 lg:mt-40">
             <div className='w-full md:w-fit mx-auto flex items-start justify-between md:justify-start md:gap-36'>
                 <LargeLogo />
                 <div className="flex flex-col gap-1.5">

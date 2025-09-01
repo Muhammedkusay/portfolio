@@ -1,5 +1,5 @@
 
-function ProgrammingBadget({text, children}) {
+function ProgrammingBadge ({text, children}) {
 
     return(
         <div className="size-24 md:size-21 flex flex-col items-center justify-center gap-0.5 rounded-xl md:rounded-2xl bg-slate-50 border border-slate-300">
@@ -10,4 +10,4 @@ function ProgrammingBadget({text, children}) {
     )
 }
 
-export default ProgrammingBadget
+export default ProgrammingBadge
