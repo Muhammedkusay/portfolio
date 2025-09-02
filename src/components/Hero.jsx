@@ -7,7 +7,7 @@ function Hero() {
     return(
         <div className="bg-[url(/assets/bg.webp)] bg-cover bg-no-repeat bg-center">
             <div className="pt-6 bg-gradient-to-b from-white to-transparent overflow-hidden">
-                <div className="md:w-4/6 mx-auto px-4 md:px-0 flex flex-wrap items-center justify-between">
+               <div className="md:w-4/6 mx-auto px-4 md:px-0 flex flex-wrap items-center justify-between">
                     {/* hero section greeting */}
                     <div className="w-full md:w-7/12">
                         <h1 className="pt-4 text-slate-700 font-bold text-3xl md:text-5xl text-wrap">Hi, I'm Muhammed 👋</h1>

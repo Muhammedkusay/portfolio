@@ -31,11 +31,8 @@ function NavBar() {
 
                 </div>
                 
-                <SecondaryBtn href={"https://linkedin.com/in/mkusay"} target="_blank">
-                    <div className="flex items-center gap-0.5">
-                        <span className="hidden md:block">Linked</span>
-                        <FaLinkedin className="text-xl md:text-md text-blue-600"/>
-                    </div>
+                <SecondaryBtn href="/#contact">
+                    Contact
                 </SecondaryBtn>
             </header>
         </nav>

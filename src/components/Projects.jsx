@@ -85,7 +85,7 @@ function Projects() {
     }
 
     return(
-        <section id="projects" className="px-4 md:px-0 pt-16 md:pt-18 md:mt-32 min-h-[1200px]">
+        <section id="projects" className="px-4 md:px-0 pt-16 mt-18 md:pt-18 md:mt-32 min-h-[1200px]">
             <Title text={"Projects"} />
             <div className="w-full md:w-3/4 mx-auto mt-12 md:mt-28">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
