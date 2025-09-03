@@ -2,13 +2,14 @@ import Input from './Input.jsx'
 import Textarea from './Textarea.jsx'
 import PrimaryBtn from './PrimaryBtn.jsx'
 import Title from './Title.jsx'
+import ContactImg from './ContactImg.jsx'
 
 function Contact() {
 
     return(
         <section id="contact" className='px-4 md:px-0 pt-16 mt-18 md:pt-18 md:mt-32'>
             <Title text={"Contact"} />
-            <div className="w-full md:w-3/4 mx-auto mt-12 md:mt-28 flex flex-col md:flex-row">
+            <div className="w-full md:w-3/4 mx-auto mt-12 md:mt-28 flex flex-col md:flex-row gap-12 items-center justify-between">
                 <form action="" className='w-full md:w-1/2'>
                     <Input label='Name' type='text' name='from-name' placeholder='Enter Your Name' />
                     <Input label='Email' type='email' name='from-email' placeholder='example@me.com' />
@@ -17,9 +18,7 @@ function Contact() {
                     
 
                 </form>
-                <div>
-
-                </div>
+                <ContactImg />
             </div>
         </section>
     )
