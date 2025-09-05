@@ -16,6 +16,7 @@ function Contact() {
         setErrors([])
         if(form.current.user_name.value.trim() == '') setErrors(prev => [...prev, "Name field is empty"])
         if(form.current.user_email.value.trim() == '') setErrors(prev => [...prev, "Email field is empty"])
+        if(!isValidEmaild(form.current.user_email.value.trim())) setErrors(prev => [...prev, "Email is not valid"])
         if(form.current.subject.value.trim() == '') setErrors(prev => [...prev, "Subject field is empty"])
         if(form.current.message.value.trim() == '') setErrors(prev => [...prev, "Message field is empty"])
         
@@ -28,6 +29,12 @@ function Contact() {
         //                 alert(`Error, could not send email: ${error.text || error.message}`)
         //             })
         // }
+    }
+
+    const isValidEmaild = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        return emailRegex.test(email)
     }
 
     return(
