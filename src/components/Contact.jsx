@@ -5,30 +5,36 @@ import ContactImg from './ContactImg.jsx'
 import emailjs from '@emailjs/browser'
 import { useRef, useState } from 'react'
 import FormError from './FormError.jsx'
+import FormStatus from './FormStatus.jsx'
 
 function Contact() {
 
     const form = useRef()
     const [errors, setErrors] = useState([])
+    const [status, setStatus] = useState(false)
     
     const sendEmail = (e) => {
         e.preventDefault()
+        setStatus(false)
         setErrors([])
+
         if(form.current.user_name.value.trim() == '') setErrors(prev => [...prev, "Name field is empty"])
         if(form.current.user_email.value.trim() == '') setErrors(prev => [...prev, "Email field is empty"])
-        if(!isValidEmaild(form.current.user_email.value.trim())) setErrors(prev => [...prev, "Email is not valid"])
+        else if(!isValidEmaild(form.current.user_email.value.trim())) setErrors(prev => [...prev, "Email is not valid"])
         if(form.current.subject.value.trim() == '') setErrors(prev => [...prev, "Subject field is empty"])
         if(form.current.message.value.trim() == '') setErrors(prev => [...prev, "Message field is empty"])
         
-        // if(errors.length === 0) {
-        //     emailjs.sendForm("service_69z2llc", "template_c1qb1gi", form.current, "R2dCDHA5MxaI0a5En")
-        //             .then(() => {
-        //                 alert('Email sent successfully')
-        //                 form.current.reset()
-        //             }, (error) => {
-        //                 alert(`Error, could not send email: ${error.text || error.message}`)
-        //             })
-        // }
+        else {
+            setStatus("sending")
+            emailjs.sendForm("service_69z2llc", "template_c1qb1gi", form.current, "R2dCDHA5MxaI0a5En")
+                    .then(() => {
+                        setStatus("sent")
+                        form.current.reset()
+                    }, (error) => {
+                        setErrors("Message was not sent!")
+                        setStatus(false)
+                    })
+        }
     }
 
     const isValidEmaild = (email) => {
@@ -43,12 +49,13 @@ function Contact() {
             <div className="w-full md:w-3/4 mx-auto mt-12 md:mt-28 flex flex-col md:flex-row gap-12 items-center justify-between">
                 <form ref={form} onSubmit={sendEmail} className='w-full md:w-1/2'>
                     <Input label='Name' type='text' name='user_name' placeholder='Enter Your Name' />
-                    <Input label='Email' type='email' name='user_email' placeholder='example@me.com' />
+                    <Input label='Email' type='text' name='user_email' placeholder='example@me.com' />
                     <Input label='Subject' type='text' name='subject' placeholder='Example Subject' />
                     <Textarea label='Message' name='message' placeholder='Enter Your Message' />
-                    <Input type='submit' className='mt-4 py-1.5 cursor-pointer bg-indigo-500 text-white hover:bg-indigo-600 rounded-lg'/>
+                    <Input type='submit' className='mt-4 py-1.5 cursor-pointer bg-indigo-500 text-white hover:bg-indigo-600 rounded-lg focus:bg-indigo-600'/>
                     
-                    {errors && errors.map((error, id) => <FormError key={id} message={error}/>)}
+                    {errors.length > 0 && <FormError errors={errors}/>}
+                    {status && <FormStatus status={status} message={"Message Sent Successfully!"} />}
                     
                 </form>
                 <ContactImg />
