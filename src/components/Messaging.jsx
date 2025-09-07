@@ -38,25 +38,25 @@ function Messaging() {
             <div className="flex gap-2 items-end px-4 mt-auto md:px-6 max-h-72 md:max-h-[240px] overflow-hidden">
                 <Logo />
                 <div>                    
-                    <p className="relative text-slate-700 bg-slate-100 p-3 rounded-xl border border-slate-200">
+                    <p className="relative text-slate-700 bg-slate-100 p-3 rounded-lg border border-slate-200">
                         I’m Muhammed, a <span className="font-semibold">full-stack web developer</span> with a strong foundation in modern 
                         web technologies and a passion for building user-friendly web applications.
                         <span className="hidden md:inline"> Whether it’s crafting clean UIs or solving backend challenges, </span>
                         I’m always looking to grow and build better digital experiences.
                         <FaStar className="absolute right-2 bottom-2 text-slate-500"/>
                     </p>
-                    <p className="text-slate-700 bg-slate-100 mt-1 p-2.5 py-2 rounded-xl border border-slate-200">
+                    <p className="text-slate-700 bg-slate-100 mt-1 p-2.5 py-2 rounded-lg border border-slate-200">
                         Type a message <span className="text-xl">👋</span>
                     </p>
                     {messages.map((message, key) => 
-                        <p key={key} className="text-slate-700 bg-slate-100 mt-1 p-2.5 rounded-xl border border-slate-200">{message}</p>
+                        <p key={key} className="text-slate-700 bg-slate-100 mt-1 p-2.5 rounded-lg border border-slate-200">{message}</p>
                     )}
                 </div>
             </div>
             {/* send message */}
             <form className="flex gap-3 px-4 md:px-6">
                 <div className="w-full">
-                    <input type="text" className="w-full text-md md:text-lg text-slate-500 bg-slate-100 p-2 rounded-xl border border-slate-200" placeholder="Say Hello!" value={value} onChange={e => setValue(e.target.value)}/>
+                    <input type="text" className="w-full text-gray-500 bg-gray-50 p-2 rounded-xl border border-gray-300" placeholder="Say Hello!" value={value} onChange={e => setValue(e.target.value)}/>
                 </div>
                 <button type="submit" onClick={e => handleMessage(e)} className="bg-slate-100 p-2 px-2.5 rounded-xl border border-slate-200 hover:bg-slate-200 cursor-pointer">
                     <IoMdSend className="text-2xl text-indigo-500" />

@@ -8,7 +8,7 @@ function MacUI() {
             <div className="px-4 pt-4 md:pt-6 flex justify-between items-center rounded-t-2xl md:rounded-t-4xl bg-slate-100 border-b border-b-slate-300">
                 <div className="flex gap-1 items-center">
                     <h2 className="text-slate-700 text-sm md:text-md py-1 px-4 bg-white rounded-t-xl border-b-0 border border-slate-300">
-                        Languages <span className="hidden md:inline">& Frameworks</span>
+                        Technical Skills Page
                     </h2>
                     <div className="text-xl text-slate-700 p-1 hover:bg-slate-200 rounded-full cursor-pointer">
                         <FiPlus />
