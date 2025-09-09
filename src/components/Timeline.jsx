@@ -9,7 +9,7 @@ function Timeline() {
         <div className="mt-32 md:mt-44 lg:mt-52">
             <div className="h-full lg:w-full border-slate-300 border-l lg:border-l-0 lg:border-t flex flex-col lg:flex-row justify-between gap-10 ml-4 lg:ml-0 pl-8 lg:pl-0 lg:pt-8 text-slate-700">
 
-                <TimelineCard month="Sep" year="2022" company="Firat Uni.">
+                <TimelineCard month="Sep" year="2022" company="Firat Uni." url={"https://firat.edu.tr"}>
                     <p className="pb-2">Started Bachelor's in Software Engineering</p>
                     <p>- Graduation in <b>2026</b></p>
                     <p className="pb-3">- Current GPA <b>3.44</b></p>
@@ -48,7 +48,7 @@ function Timeline() {
                     <img src={arslanImg} alt="" className="w-11 mt-auto"/>
                 </TimelineCard>
 
-                <TimelineCard month="Jul" year="2025" company="Intellium">
+                <TimelineCard month="Jul" year="2025" company="Intellium" url={"https://intellium.com.tr"}>
                     <p className="pb-3">Software Engineer Intern</p>
                     <p className="pb-3">- Fullstack web developer</p>
                     <div className="flex items-start gap-1">
