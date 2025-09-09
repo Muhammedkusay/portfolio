@@ -12,19 +12,59 @@ function Timeline() {
                 <TimelineCard month="Sep" year="2022" company="Firat Uni.">
                     <p className="pb-2">Started Bachelor's in Software Engineering</p>
                     <p>- Graduation in <b>2026</b></p>
-                    <p className="pb-8">- Current GPA <b>3.49</b></p>
+                    <p className="pb-3">- Current GPA <b>3.44</b></p>
+                    <div className="flex items-start gap-1">
+                        <span>-</span>
+                        <p className="pb-3">
+                            Learned programming fundamentals then progressed to advanced programming like oop and data structures.
+                        </p>
+                    </div>
+                    <div className="flex items-start gap-1">
+                        <span>-</span>
+                        <p className="pb-3">
+                            Developed several projects to strengthen my knowledge, including projects based on OOP, databases, and machine learning.
+                        </p>
+                    </div>
                     <img src={firatImg} alt="" className="w-12 mt-auto"/>
                 </TimelineCard>
+                
                 <TimelineCard month="Jul" year="2024" company="Arslan Tech.">
-                    <p className="pb-2">Software Engineer Intern</p>
-                    <p>- Fullstack web development</p>
-                    <p className="pb-8">- Building Real estate web application</p>
+                    <p className="pb-3">Software Engineer Intern</p>
+                    <p className="pb-3">- Fullstack web developer</p>
+                    <div className="flex items-start gap-1">
+                        <span>-</span>
+                        <p className="pb-3">
+                            Contributed to the development of a real estate web application for property
+                            listings, search, and management.
+                        </p>
+                    </div>
+                    <div className="flex items-start gap-1">
+                        <span>-</span>
+                        <p className="pb-6">
+                            Assisted in creating and maintaining database models and relationships to support
+                            property details, users, and listings.
+                        </p>
+                    </div>
                     <img src={arslanImg} alt="" className="w-11 mt-auto"/>
                 </TimelineCard>
+
                 <TimelineCard month="Jul" year="2025" company="Intellium">
-                    <p className="pb-2">Software Engineer Intern</p>
-                    <p>- Fullstack web development</p>
-                    <p className="pb-8">- Building a Project Management System</p>
+                    <p className="pb-3">Software Engineer Intern</p>
+                    <p className="pb-3">- Fullstack web developer</p>
+                    <div className="flex items-start gap-1">
+                        <span>-</span>
+                        <p className="pb-3">
+                            Worked on a project management system for manage projects, track progress and
+                            visualize data through interactive charts
+                        </p>
+                    </div>
+                    <div className="flex items-start gap-1">
+                        <span>-</span>
+                        <p className="pb-6">
+                            Collaborated with cross-functional teams to ideate and prototype innovative
+                            solutions for web development projects
+                        </p>
+                    </div>
                     <img src={intelliumImg} alt="" className="w-32 mt-auto"/>
                 </TimelineCard>
 
