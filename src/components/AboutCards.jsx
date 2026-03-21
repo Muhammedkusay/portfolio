@@ -2,10 +2,14 @@
 import { FaLaravel, FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava, FaGithub, FaPhp, FaJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
-import { SiAlpinedotjs, SiPostgresql } from "react-icons/si";
+import { SiAlpinedotjs, SiPostgresql, SiNumpy, SiPandas, SiScikitlearn, SiTensorflow, SiOpencv} from "react-icons/si";
 import { HiOutlinePaintBrush } from "react-icons/hi2";
 import { BsDatabase } from "react-icons/bs";
 import { IoCodeSlashOutline, IoLogoPython } from "react-icons/io5";
+import { LuBrainCircuit } from "react-icons/lu";
+import { BsGraphUp } from "react-icons/bs";
+import { PiShareNetworkBold } from "react-icons/pi";
+
 
 // Components
 import SecondaryBtn from "./SecondaryBtn";
@@ -39,11 +43,11 @@ function AboutCards() {
             </div>
 
             {/* card stack */}
-            <div className="relative w-full h-[180px] md:h-[500px] overflow-hidden">
+            <div className="relative w-full h-[210px] md:h-[500px] overflow-hidden">
                 <CardSwap
                     cardDistance={60}
                     verticalDistance={70}
-                    delay={4000}
+                    delay={3000}
                     pauseOnHover={false}
                 >
                     <Card>
@@ -116,6 +120,35 @@ function AboutCards() {
                                 </ProgrammingBadge>
                                 <ProgrammingBadge text="C">
                                     <img src={cImg} alt="C" className="w-6 grayscale" />
+                                </ProgrammingBadge>
+                            </div>
+                        </div>
+                    </Card>
+
+                    <Card>
+                        <div className="p-4">
+                            <div className="mb-4 flex items-center gap-2.5">
+                                <LuBrainCircuit className="text-2xl text-indigo-700" />
+                                <h3>Machine Learning</h3>
+                            </div>
+                            <div className="flex flex-wrap gap-2 md:gap-1.5">
+                                <ProgrammingBadge text="Tensoflow">
+                                    <SiTensorflow className="text-2xl text-slate-700" />
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="OpenCV">
+                                    <SiOpencv className="text-2xl text-slate-700" />
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="ANN">
+                                    <PiShareNetworkBold className="text-2xl text-slate-700" />
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Numpy">
+                                    <SiNumpy className="text-2xl text-slate-700" />
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="Pandas">
+                                    <SiPandas className="text-2xl text-slate-700" />
+                                </ProgrammingBadge>
+                                <ProgrammingBadge text="MatPlot">
+                                    <BsGraphUp className="text-2xl text-slate-700" />
                                 </ProgrammingBadge>
                             </div>
                         </div>
