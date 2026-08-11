@@ -11,7 +11,7 @@ function Hero() {
                     {/* hero section greeting */}
                     <div className="w-full md:w-7/12">
                         <h1 className="pt-4 text-slate-700 font-bold text-3xl md:text-5xl text-wrap">Hi, I'm Muhammed 👋</h1>
-                        <p className="pt-4 text-slate-500 md:w-80">A Software Engineering Student & Web Developer.
+                        <p className="pt-4 text-slate-500 md:w-80">A Software Engineer & Web Developer.
                         I build modern, efficient web applications that turn ideas into practical solutions.</p>
                         <div className="flex gap-2 pt-6">
                             <CvBtn />
