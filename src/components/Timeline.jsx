@@ -11,8 +11,8 @@ function Timeline() {
 
                 <TimelineCard month="Sep" year="2022" company="Firat Uni." url={"https://firat.edu.tr"}>
                     <p className="pb-2">Started Bachelor's in Software Engineering</p>
-                    <p>- Graduation in <b>2026</b></p>
-                    <p className="pb-3">- Current GPA <b>3.44</b></p>
+                    <p>- Graduated in <b>2026</b></p>
+                    <p className="pb-3">- Current GPA <b>3.36</b></p>
                     <div className="flex items-start gap-1">
                         <span>-</span>
                         <p className="pb-3">
